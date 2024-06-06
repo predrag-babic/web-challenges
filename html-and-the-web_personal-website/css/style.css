@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  max-width: fit-content;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header {
+  background-image: url(/img/Siberia.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  border: 5px #252629;
+}
+
+.header_titel {
+  text-align: center;
+}
+
+.navigation__link {
+  background-color: #2bbed1;
+  color: #ffffff;
+  padding: 5px 14px;
+  border-radius: 5px;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skillset_list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile {
+  display: flex;
+  background-color: #e5e7ec;
+  border: 5px #252629;
+}
+.about_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.other_fotos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.family_image {
+  border-radius: 20px;
+}
+
+.football_image {
+  border-radius: 20px;
+}
+
+.profile_foto {
+  padding: 16px 12px 12px 12px;
+}
+
+.main__title {
+  background-color: #494242;
+  text-align: center;
+  border: 5px #252629;
+  color: white;
+}
+
+.skillset__list-item {
+  padding: 10px;
+  background-color: #161515;
+  color: white;
+  border-radius: 15px;
+}
+
+.contact {
+  background-color: #e5e7ec;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border: 5px #252629;
+}
+
+.contact-list {
+  align-self: center;
+  gap: 20px;
+}
+
+.contact-link {
+  padding: 0;
+  background-color: #161515;
+  color: white;
+  border-radius: 5px;
+}
+
+.contact_title {
+  text-align: center;
+}
+
+.about_title {
+  text-align: center;
+}
+
+.skills_title {
+  text-align: center;
+}
+
+.skills {
+  background-color: #e5e7ec;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border: 5px #252629;
+  border-radius: 10px;
+}
+
+.skillset_list {
+  display: flex;
+  justify-content: center;
+}
+
+.biography_titel {
+  background-color: #ebe865;
+  border: 5px #252629;
+  border-radius: 10px;
+  margin-top: 20px;
+}
