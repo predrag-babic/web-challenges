@@ -244,10 +244,43 @@ width, etc. */
 
 /* Media Query Tablet */
 /* --- */
-/* Replace this comment with your media query. */
-/* --- */
+@media (min-width: 600px) {
+  .intro-text {
+    width: 40%;
+  }
+
+  .card-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .product-card {
+    width: 45%;
+  }
+
+  .box--five {
+    width: 50%;
+  }
+}
 
 /* Media Query Desktop */
 /* --- */
-/* Replace this comment with your media query. */
-/* --- */
+
+@media (min-width: 1200px) {
+  .--forest {
+    width: 100%;
+  }
+
+  .--mountain {
+    width: 45%;
+  }
+
+  .intro-text {
+    width: 45%;
+  }
+
+  .--desert {
+    width: 50%;
+  }
+}
