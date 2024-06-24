@@ -28,8 +28,6 @@ function calculateScrollPercentage() {
   return (windowScrollPosition / (webSiteHeight - windowScrollHeight)) * 100;
 }
 
-document.addEventListener("scroll" () => {
+document.addEventListener("scroll", () => {
   progressBar.style.width = calculateScrollPercentage() + "%";
-
-}
-);
+});
