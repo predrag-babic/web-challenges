@@ -13,6 +13,7 @@ export default function launch() {
   fuel();
 
   Array(5).fill(null).forEach(countdown);
-  liftoff();
-  deployPayload();
+  console.log(Array(5).fill(null));
+  //liftoff();
+  //deployPayload();
 }
