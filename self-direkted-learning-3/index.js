@@ -158,3 +158,15 @@ function watchTV() {
 }
 
 //will be called in the goHome function
+
+let time = 14;
+const greetingText = time < 12 ? "Good morning" : "Good afternoon";
+
+console.log(greetingText);
+
+function printSum(first, second, third) {
+  const sum = first + second + third;
+  console.log("The sum of your numbers is: " + sum);
+}
+
+console.log(printSum(1, 2, 3));
