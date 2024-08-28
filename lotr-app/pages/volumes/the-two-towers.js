@@ -25,6 +25,29 @@ export default function TwoTowers() {
         width={140}
         height={230}
       />
+      <VolumeLinks />
+    </>
+  );
+}
+
+export function VolumeLinks() {
+  const volumeIndex = volumes.findIndex(
+    ({ slug }) => slug === "the-two-towers"
+  );
+
+  const previousVolume = volumes[volumeIndex - 1];
+  const nextVolume = volumes[volumeIndex + 1];
+
+  return (
+    <>
+      {previousVolume && (
+        <Link href={`/volumes/${previousVolume.slug}`}>
+          ⬅️{previousVolume.title}
+        </Link>
+      )}
+      {nextVolume && (
+        <Link href={`/volumes/${nextVolume.slug}`}>{nextVolume.title}➡️</Link>
+      )}
     </>
   );
 }
