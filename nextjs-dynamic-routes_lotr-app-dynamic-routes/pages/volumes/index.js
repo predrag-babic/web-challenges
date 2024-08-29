@@ -19,8 +19,8 @@ export default function Volumes() {
       <h1>The Lord of the Rings</h1>
       <p>{introduction}</p>
       <ul>
-        {volumes.map((volume, index) => (
-          <li key={index}>
+        {volumes.map((volume) => (
+          <li key={volume.slug}>
             <Link href={`/volumes/${volume.slug}`}>{volume.title}</Link>
           </li>
         ))}
