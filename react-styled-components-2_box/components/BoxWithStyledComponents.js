@@ -1,7 +1,7 @@
 import styled from "styled-components";
-export default function BoxWithStyledComponents({ $isBlack, $isHover }) {
-  return <StyledBox $isBlack={$isBlack} $isHover={$isHover}></StyledBox>;
-}
+// export default function BoxWithStyledComponents({ $isBlack, $isHover }) {
+//   return <StyledBox $isBlack={$isBlack} $isHover={$isHover}></StyledBox>;
+// }
 
 const StyledBox = styled.div`
   width: 100px;
@@ -12,6 +12,8 @@ const StyledBox = styled.div`
 
   &:hover {
     background-color: ${({ $isHover }) =>
-      $isHover === "true" ? "red" : "black"};
+      $isHover === "rot" ? "red" : "yellow"};
   }
 `;
+
+export default StyledBox;

@@ -1,20 +1,15 @@
 import styled from "styled-components";
 import BoxWithClassName from "../components/BoxWithClassName/BoxWithClassName.js";
-import BoxWithStyledComponents from "@/components/BoxWithStyledComponents.js";
+//import BoxWithStyledComponents from "@/components/BoxWithStyledComponents.js";
+import StyledBox from "@/components/BoxWithStyledComponents.js";
 
 export default function HomePage() {
   return (
     <FlexContainer>
       <BoxWithClassName />
       <BoxWithClassName isBlack />
-      <BoxWithStyledComponents
-        $isBlack="true"
-        $isHover="true"
-      ></BoxWithStyledComponents>
-      <BoxWithStyledComponents
-        $isBlack="false"
-        $isHover="true"
-      ></BoxWithStyledComponents>
+      <StyledBox $isBlack="true" $isHover="rot"></StyledBox>
+      <StyledBox $isBlack="false"></StyledBox>
     </FlexContainer>
   );
 }
