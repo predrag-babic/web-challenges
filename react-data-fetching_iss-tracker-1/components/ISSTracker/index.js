@@ -5,6 +5,12 @@ import useSWR from "swr";
 
 const URL = "https://api.wheretheiss.at/v1/satellites/25544";
 
+async function fetcher(url) {
+  const response = await fetch(url);
+  const data = response.json();
+  return data;
+}
+
 export default function ISSTracker() {
   // const [coords, setCoords] = useState({
   //   longitude: 0,
@@ -32,6 +38,16 @@ export default function ISSTracker() {
   //     clearInterval(timer);
   //   };
   // }, []);
+
+  const { isLoading, error, data: coords } = useSWR(URL, fetcher);
+
+  if (isLoading) {
+    return <h1>Loading ...</h1>;
+  }
+
+  if (error || !coords) {
+    return <h1>Error: {error}</h1>;
+  }
 
   return (
     <main>
