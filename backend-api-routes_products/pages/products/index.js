@@ -20,9 +20,10 @@ export default function Products() {
       <ul>
         {data.map((product) => (
           <li key={product.id}>
-            <h2>{product.name}</h2>
-            <p>Price: ${product.price}</p>
-            <p>{product.description}</p>
+            <Link href={`/products/${product.id}`}>
+              {product.name}
+              {product.description}
+            </Link>
           </li>
         ))}
       </ul>
