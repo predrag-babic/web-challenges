@@ -21,6 +21,8 @@ export default function ProductForm() {
 
     if (response.ok) {
       mutate();
+      event.target.reset();
+      alert("You added new fish successfully!");
     }
   }
 
@@ -39,6 +41,7 @@ export default function ProductForm() {
         Price:
         <input type="number" id="price" name="price" min="0" />
       </StyledLabel>
+
       <StyledLabel htmlFor="currency">
         Currency:
         <select id="currency" name="currency">
@@ -46,6 +49,18 @@ export default function ProductForm() {
           <option value="USD">USD</option>
           <option value="GBP">GBP</option>
         </select>
+      </StyledLabel>
+      <StyledLabel htmlFor="reviewTitle">
+        Review Title:
+        <input type="text" id="reviewTitle" name="reviewTitle" />
+      </StyledLabel>
+      <StyledLabel htmlFor="review">
+        Review Text:
+        <input type="text" id="review" name="review" />
+      </StyledLabel>
+      <StyledLabel htmlFor="rating">
+        Rating (1-5):
+        <input type="number" id="rating" name="rating" min="1" max="5" />
       </StyledLabel>
       <StyledButton type="submit">Submit</StyledButton>
     </StyledForm>
