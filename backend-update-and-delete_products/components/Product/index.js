@@ -22,6 +22,8 @@ export default function Product() {
   }
 
   async function handleEditProduct(event) {
+    event.preventDefault();
+
     const formData = new FormData(event.target);
     const productData = Object.fromEntries(formData);
 
@@ -46,7 +48,6 @@ export default function Product() {
       method: "DELETE",
     });
     if (response.ok) {
-      await response.json();
       router.push("/");
     } else {
       console.error("Failed to delete product");
